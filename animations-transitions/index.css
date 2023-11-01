@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-box {
+    width: 42px;
+    transition-property: background-color, width, padding-left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.img-box:hover {
+    width: 100px;
+    padding-left: 35px;
+    background-color: lightgray;
+}
+
+.animation-test {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid green;
+    background-color: aqua;
+    transition: width 1s, height 3s, background-color 0.5s;
+    /* transition-delay: 5s; */
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.animation-test:hover {
+    width: 1000px;
+    height: 200px;
+    background-color: brown;
+}

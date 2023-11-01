@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    padding: 10px;
+    height: 54px;
+    background-color: cornflowerblue;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+.my-div {
+    position: relative;
+    width: 200px;
+    height: 64px;
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    border: none;
+    animation: fadeInLeft 1s infinite alternate-reverse;
+    /* animation-timing-function: ease; */
+    /* animation: mymove 2s infinite both; */
+    transition: transform 2s;
+}
+
+.my-div:hover {
+    /* transform: scale(1.5); */
+}
+
+@keyframes fadeInLeft {
+    0% {top: 0px}
+    /* 10% {left: 25px}
+    30% {left: 50px}
+    50% {left: 75px}
+    70% {left: 125px} */
+    100% {top: 10px}
+}
+
+@keyframes mymove {
+    0% {left: 0px; top: 0px; background-color: red;}
+    25% { left: 200px; top: 0px; background-color: black;}
+    50% { left: 200px; top: 200px; background-color: blue;}
+    75% { left: 0px; top: 200px; background-color: violet;}
+    100% { left: 0px; top :0px;background-color: aquamarine;}
+}
+
+@media only screen and (max-width: 1023px) {
+    .nav-items {
+        display: none;
+    }  
+    .burger {
+        display: block;
+    } 
+}
+
+@media print {
+
+}
+
+@media (orientation: landscape) and (max-width: 600px) {
+
+}

@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    color: red;
+}
+
+.subtext {
+    color: blue;
+}
+
+/* NAVIGATION */
+
+.nav {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-color: cornflowerblue;
+    padding: 12px;
+}
+
+.nav-items-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-btn {
+    width: 155px;
+    border-radius: 12px;
+    height: 40px;
+    background-color: brown;
+    color: white;
+}
+
+.nav-burger {
+    display: none;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 1024px) {
+   .nav-items {
+        display: none;
+   }
+   .nav-burger {
+        display: block;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .nav-heading {
+        color: blue;
+        font-size: 30px;
+   }
+}
+
+@media (orientation: landscape) and (max-height: 300px) and (max-width: 1000px) {
+    .nav-heading {
+        color:aqua;
+    }
+}
+
+/* PRINT */
+
+@media print {
+    .header {
+        display: none;
+    }
+}
+
+.my-div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    border-radius: 12px;
+
+    animation: mymove1 5s;
+}
+
+@keyframes mymove {
+    from { left: 0px; background-color: blue; }
+    to { left: 300px; background-color: green; }
+}
+
+@keyframes mymove1 {
+    0% { left: 0px; top: 0px; background-color: blue; }
+    25% { left: 300px; top:0px; background-color: green; }
+    50% { left: 300px; top: 300px; background-color: darkgoldenrod; }
+    75% { left: 0px; top: 300px; background-color: gray; }
+    100% { left: 0px; top: 0px; background-color: violet; }
+}
