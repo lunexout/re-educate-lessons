@@ -32,7 +32,7 @@
 }
 
 .nav-items {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 14px;
 }
@@ -46,17 +46,17 @@
 }
 
 .nav-burger {
-    display: none;
+    /* display: none; */
 }
 
 /* RESPONSIVE DESIGN */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
    .nav-items {
-        display: none;
+        display: flex;
    }
    .nav-burger {
-        display: block;
+        display: none;
    }
 }
 
